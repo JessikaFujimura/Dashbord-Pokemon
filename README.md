@@ -22,9 +22,6 @@ Ao clicar no botão **View More** é mostrado na tela em formato modal, um card 
 - HTML5
 - **[PokéAPI](https://pokeapi.co/)** 
 
-## Dicas
+## Githubpages
 
-- Se necessário pode mockar alguns dados
-- Tente utilizar a menor quantidade de requests possível
-- Você tem total liberdade para mudar e inovar no projeto.
-
+https://jessikafujimura.github.io/desafio-frontend/. 
