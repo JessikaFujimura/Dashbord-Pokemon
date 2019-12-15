@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+.header {
+    box-sizing: border-box;
+    height: 120px;
+    width: 1920px;
+    background-color: rgba(255,255, 255, 1);
+    border: 1px solid rgba(112, 112, 112, 1);
+    box-shadow: 0px 3px 6px 0px rgba(76, 78, 111, 0.12);
+}
+.header-card {
+    display: flex;
+    font-size: 16px;
+    color: rgba(205, 205, 205, 1);
+    justify-content: space-between;
+    text-align: left;
+}
+.logo {
+    position: absolute;
+    top: 31px;
+    left: 444px;
+}
+.main {
+    width: 1920px;
+    background-color: rgba(246, 247, 252, 1);
+}
+.card {
+    box-sizing: border-box;
+    height: 400px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(112, 112, 112, 1);
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px 0px rgba(212, 215, 228, 1);
+    margin: 0 30px 30px 0;
+    padding: 32px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagePoke {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.btnlike {
+    display: inline-block;
+    background-image: url('./img/heart-uncolored.png');
+    box-shadow: none;
+    width: 24px;
+    height: 20px;
+    background-color: rgb(0,0,0,0);
+    border:none;
+}
+.btnlike.click {
+    background-image: url('./img/heart.png');
+}
+.namePoke {
+    text-align: center;
+    font-size: 28px;
+}
+.info {
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    height: 56px;
+    width: 265px;
+    background-color: rgba(73, 208, 176, 1);
+    border: 1px solid rgba(112, 112, 112, 1);
+    border-radius: 28px;
+    margin: 10px auto;
+}
+.nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+}
+.section {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1920px;
+    padding: 0 250px;
+}
+select {
+    height: 40px;
+    width: 173px;
+    align-self: center;
+    background-color: rgba(73, 208, 176, 1);
+    border: 1px solid rgba(112, 112, 112, 1);
+    border-radius: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bolder;
+    text-align: center;
+}
+.typePoke {
+    height: 24px;
+    width: 60px;
+    border-radius: 28px;
+    background-color: rgba(246, 247, 252, 1);
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
+    color: rgba(110, 196, 171, 1);
+}
+.type {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 469px;
+    height: 750px;
+    flex-direction: column;
+}
+
+#btnclose {
+    font-family: monospace;
+    font-size: 30px;
+    width: 21px;
+    align-self: flex-end;
+    color:rgba(205, 205, 205, 1);
+    box-shadow: none;
+    background-color: rgba(0,0,0,0); 
+    border:none;
+    cursor: pointer;
+}
+
+.valuePoke {
+    font-size: 35px;
+}
+
+.stats {
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    flex-wrap: wrap;
+}
+.stats p {
+    margin-bottom: 8px;
+}
+
+.imagePoke-modal {
+    display: flex;
+    margin: auto;
+    width: 218px;
+}
+.btnlike-modal {
+    display: inline-block;
+    background-image: url('./img/heart-uncolored.png');
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    left: 1120px;
+    bottom: 430px;
+    box-shadow: none;
+    background-color: rgba(0,0,0,0); 
+    border:none;
+}
