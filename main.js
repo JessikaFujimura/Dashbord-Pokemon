@@ -24,8 +24,8 @@ function arrayPoke(urlF) {
   fetch(urlF)
     .then(response => response.json())
     .then(poke => {
-      const type = poke.types.map(item => (item.type.name).charAt(0).toUpperCase()+(item.type.name).slice(1));
-      const name = poke.name.charAt(0).toUpperCase()+ poke.name.slice(1);
+      const type = poke.types.map(item => (item.type.name).charAt(0).toUpperCase() + (item.type.name).slice(1));
+      const name = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);
       const ability = poke.abilities.map(item => item.ability.name).toString();
       pokemons.push({
         id: poke.id,
@@ -49,7 +49,7 @@ function arrayPoke(urlF) {
 function templateCards(data) {
   section.innerHTML = '';
   data.forEach(poke => {
-  section.innerHTML += `<div class='card'>
+    section.innerHTML += `<div class='card'>
     <div class='header-card'>
       <span>#${poke.id}</span>
       <button class='btnlike' id='${poke.name}' onclick='liked(event)'></button>
@@ -65,7 +65,7 @@ function templateCards(data) {
 //Função de filtro por tipo de pokemon
 const typeChange = document.querySelector('.generation')
 typeChange.addEventListener('change', () => {
-  if(typeChange.value === 'all') {
+  if (typeChange.value === 'all') {
     templateCards(pokemons)
   }
   else {
@@ -80,7 +80,7 @@ setTimeout(() => {
 //Função para mostrar o modal
 function showModal(event) {
   const e = Number(event.target.id);
-  const pokeModal = pokemons.filter((i)=> i.id === e);
+  const pokeModal = pokemons.filter((i) => i.id === e);
   document.querySelector('#myModal').classList.add('show');
   document.querySelector('.modal-content').innerHTML = `
   <div class='header-card'>
@@ -110,7 +110,7 @@ function closeModal() {
 function liked(event) {
   const e = '#' + event.target.id;
   document.querySelector(e).classList.add('click')
-  pokemons.forEach((i)=> {
+  pokemons.forEach((i) => {
     if (event.target.id == i.name) {
       likedPokemons.push(i)
     }
@@ -121,10 +121,10 @@ function liked(event) {
 //Função para criar o template dos pokemons favoritos
 setTimeout(() => {
   const likedChange = document.querySelector('.pokedex')
-  likedChange.addEventListener('change',() => {
-    if(likedChange.value === 'pokedex') {
+  likedChange.addEventListener('change', () => {
+    if (likedChange.value === 'pokedex') {
       templateCards(pokemons)
-    }else {
+    } else {
       templateCards(likedPokemons)
     }
   })
