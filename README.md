@@ -24,4 +24,4 @@ Ao clicar no botão **View More** é mostrado na tela em formato modal, um card 
 
 ## Githubpages
 
-https://jessikafujimura.github.io/desafio-frontend/. 
+https://jessikafujimura.github.io/desafio-frontend/src. 

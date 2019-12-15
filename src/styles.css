@@ -6,7 +6,7 @@
 .header {
     box-sizing: border-box;
     height: 120px;
-    width: 1920px;
+    width: 100%;
     background-color: rgba(255,255, 255, 1);
     border: 1px solid rgba(112, 112, 112, 1);
     box-shadow: 0px 3px 6px 0px rgba(76, 78, 111, 0.12);
@@ -24,7 +24,7 @@
     left: 444px;
 }
 .main {
-    width: 1920px;
+    width: 100%;
     background-color: rgba(246, 247, 252, 1);
 }
 .card {
@@ -83,7 +83,7 @@
     box-sizing: border-box;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1920px;
+    width: 100%;
     padding: 0 250px;
 }
 select {
