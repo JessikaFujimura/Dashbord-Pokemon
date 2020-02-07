@@ -8,7 +8,7 @@ window.onload = () => {
 
 //Função que requisita dados da API
 function getUrl() {
-  fetch('https://pokeapi.co/api/v2/pokemon/?limit=151')
+  fetch('https://pokeapi.co/api/v2/pokemon/?limit=20')
     .then(response => response.json())
     .then(data => {
       const arrUrl = data.results;
