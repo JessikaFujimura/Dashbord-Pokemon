@@ -21,7 +21,3 @@ Ao clicar no botão **View More** é mostrado na tela em formato modal, um card 
 - CSS3;
 - HTML5
 - **[PokéAPI](https://pokeapi.co/)** 
-
-## Githubpages
-
-https://jessikafujimura.github.io/desafio-frontend/src. 
